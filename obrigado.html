@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- [QH4 SLOT 1] GOOGLE TAG MANAGER (HEAD) -->
+
+  <!-- [QH4 SLOT 2] VERIFICAÇÕES DE DOMÍNIO -->
+
+  <!-- [QH4 SLOT 3] META PIXEL DIRETO (só se NÃO usar GTM) -->
+
+  <!-- [QH4 SLOT 4] GTAG GOOGLE ADS / GA4 DIRETO (só se NÃO usar GTM) -->
+
+  <title>Pedido recebido | Troya Marmoraria</title>
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#22201e">
+  <link rel="canonical" href="https://www.marmorariatroya.com.br/obrigado.html">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/icon-32.png">
+  <link rel="apple-touch-icon" href="assets/img/icon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- [QH4 SLOT 5] GOOGLE TAG MANAGER (NOSCRIPT) -->
+
+  <main class="simples">
+    <div class="simples__box">
+      <img class="logo" src="assets/img/logo-troya.webp" alt="Troya Marmoraria" width="640" height="212">
+      <h1>Pedido de orçamento recebido</h1>
+      <p>Obrigado! Agora vamos abrir o WhatsApp da Troya para você falar direto com a nossa equipe. Se não abrir sozinho, use o botão abaixo.</p>
+      <div class="barra" aria-hidden="true"><i></i></div>
+      <a class="btn" id="abrir-wa" href="#" data-wa="obrigado" data-wa-msg="Olá, acabei de preencher o formulário no site. Aguardo mais informações.">Abrir o WhatsApp</a>
+    </div>
+  </main>
+
+  <!-- [QH4 SLOT 6] SCRIPTS DE TERCEIROS -->
+
+  <!-- [QH4 SLOT 7] CONFIGURAÇÃO em assets/js/tracking.js -->
+  <script src="assets/js/tracking.js"></script>
+  <script>
+    /* [QH4 SLOT 8] CONVERSÃO DA PÁGINA DE OBRIGADO
+       O evento thank_you_view vai para o dataLayer. Se usar gtag/Pixel direto,
+       a conversão já dispara pelo tracking.js (googleAdsLeadLabel / fbq Lead).
+       Cole aqui algum snippet extra de conversão, se o cliente pedir. */
+    (function () {
+      var c = window.QH4_CONFIG;
+      window.qh4Track('thank_you_view', { veio_do_form: (function () { try { return sessionStorage.getItem('troya_lead') === '1'; } catch (e) { return false; } })() });
+      try { sessionStorage.removeItem('troya_lead'); } catch (e) {}
+      var link = window.qh4WaLink(c.mensagemPosFormulario);
+      document.querySelector('.barra i').style.setProperty('--t', (c.redirectDelay / 1000) + 's');
+      setTimeout(function () { window.location.href = link; }, c.redirectDelay);
+    })();
+  </script>
+</body>
+</html>
