@@ -12,6 +12,9 @@ window.QH4_CONFIG = {
   // Mensagem padrão dos botões de WhatsApp
   mensagemPadrao: 'Olá! Vim pelo site da Troya Marmoraria e quero um orçamento.',
 
+  // Frase adicionada ao final de TODAS as mensagens de WhatsApp (botões e formulário)
+  sufixoMensagem: '(Não apague essa mensagem para ter atendimento prioritário)',
+
   // Mensagem enviada depois do formulário quando existe webhook (padrão QH4)
   mensagemPosFormulario: 'Olá, acabei de preencher o formulário no site. Aguardo mais informações.',
 
@@ -54,7 +57,10 @@ window.qh4Track = function (event, params) {
 };
 
 window.qh4WaLink = function (texto) {
-  return 'https://wa.me/' + window.QH4_CONFIG.whatsapp + '?text=' + encodeURIComponent(texto || window.QH4_CONFIG.mensagemPadrao);
+  var c = window.QH4_CONFIG;
+  var msg = texto || c.mensagemPadrao;
+  if (c.sufixoMensagem) msg += '\n\n' + c.sufixoMensagem;
+  return 'https://wa.me/' + c.whatsapp + '?text=' + encodeURIComponent(msg);
 };
 
 /* Liga todos os links com data-wa (href + evento com o local do clique) */
