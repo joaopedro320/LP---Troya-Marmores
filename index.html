@@ -4,9 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- [QH4 SLOT 1] GOOGLE TAG MANAGER (HEAD)
-       Cole aqui o script do GTM, o mais alto possível no <head>.
-       Ex.: <script>(function(w,d,s,l,i){...})(window,document,'script','dataLayer','GTM-KKCHQTVM"');</script> -->
+  <!-- [QH4 SLOT 1] GOOGLE TAG MANAGER (HEAD) -->
+  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KKCHQTVM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  </script>
 
   <!-- [QH4 SLOT 2] VERIFICAÇÕES DE DOMÍNIO
        Meta (facebook-domain-verification), Google Search Console etc.
@@ -43,7 +47,7 @@
   <link rel="apple-touch-icon" href="assets/img/icon-180.png">
   <link rel="manifest" href="site.webmanifest">
 
-  <link rel="preload" as="image" href="assets/img/cozinha-ilha-obra.webp" imagesrcset="assets/img/cozinha-ilha-obra-800.webp 800w, assets/img/cozinha-ilha-obra.webp 1400w" imagesizes="(max-width: 900px) 100vw, 46vw" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/img/banheiro-cubas-esculpidas.webp" imagesrcset="assets/img/banheiro-cubas-esculpidas-800.webp 800w, assets/img/banheiro-cubas-esculpidas.webp 1024w" imagesizes="(max-width: 900px) 100vw, 46vw" fetchpriority="high">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
@@ -95,13 +99,8 @@
   </script>
 </head>
 <body>
-  <!-- [QH4 SLOT 5] GOOGLE TAG MANAGER (NOSCRIPT)
-<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-KKCHQTVM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-</script>
+  <!-- [QH4 SLOT 5] GOOGLE TAG MANAGER (NOSCRIPT) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KKCHQTVM" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
@@ -148,9 +147,9 @@
 
         <figure class="laje">
           <div class="laje__img">
-            <img src="assets/img/cozinha-ilha-obra.webp" srcset="assets/img/cozinha-ilha-obra-800.webp 800w, assets/img/cozinha-ilha-obra.webp 1400w" sizes="(max-width: 900px) 100vw, 46vw" alt="Cozinha com ilha e bancadas em pedra clara instaladas pela Troya Marmoraria" width="1400" height="1400" fetchpriority="high">
+            <img src="assets/img/banheiro-cubas-esculpidas.webp" srcset="assets/img/banheiro-cubas-esculpidas-800.webp 800w, assets/img/banheiro-cubas-esculpidas.webp 1024w" sizes="(max-width: 900px) 100vw, 46vw" alt="Banheiro com cubas esculpidas e revestimento em pedra bege feitos pela Troya Marmoraria" width="1024" height="1536" fetchpriority="high">
           </div>
-          <figcaption><b>Cozinha com ilha</b>Produzida e instalada pela equipe Troya</figcaption>
+          <figcaption><b>Cubas esculpidas</b>Produzidas e instaladas pela equipe Troya</figcaption>
         </figure>
       </div>
     </section>
@@ -172,8 +171,8 @@
         </div>
         <div class="fabrica__corpo">
           <div class="fabrica__fotos">
-            <div class="f1" data-reveal="corte"><img src="assets/img/chapa-barracao.webp" alt="Chapa de pedra natural em estoque no barracão da Troya" width="868" height="868" loading="lazy"></div>
-            <div class="f2" data-reveal data-delay="250"><img src="assets/img/peca-oficina.webp" alt="Peça em pedra com acabamento sendo finalizada na oficina da Troya" width="1080" height="810" loading="lazy"></div>
+            <div class="f1" data-reveal="corte"><img src="assets/img/maquina-cnc.webp" alt="Máquina CNC de corte de pedra no barracão da Troya" width="800" height="1067" loading="lazy"></div>
+            <div class="f2" data-reveal data-delay="250"><img src="assets/img/barracao-troya.webp" alt="Barracão da Troya Marmoraria com chapas de pedra em estoque" width="800" height="886" loading="lazy"></div>
           </div>
           <ul class="equip">
             <li data-reveal>
@@ -220,14 +219,12 @@
           <a class="btn btn--dark" href="https://www.instagram.com/marmorariatroya/" target="_blank" rel="noopener" data-reveal>Ver mais no Instagram</a>
         </div>
         <div class="mosaico">
-          <figure class="peca p1" data-reveal><img src="assets/img/bancada-granito-gourmet.webp" alt="Bancada de área gourmet em granito escuro com saia reta" width="1080" height="1080" loading="lazy"><figcaption>Bancada de área gourmet em granito</figcaption></figure>
-          <figure class="peca p2" data-reveal data-delay="80"><img src="assets/img/cuba-esculpida-1.webp" alt="Cuba esculpida em pedra bege com torneira cromada" width="720" height="720" loading="lazy"><figcaption>Cuba esculpida</figcaption></figure>
+          <figure class="peca p1" data-reveal><img src="assets/img/lavatorio-marmore-duplo.webp" alt="Bancada de lavatório em mármore branco com cuba esculpida dupla e metais dourados" width="1024" height="1280" loading="lazy"><figcaption>Lavatório em mármore com cuba esculpida</figcaption></figure>
+          <figure class="peca p2" data-reveal data-delay="80"><img src="assets/img/area-gourmet-granito-preto.webp" alt="Área gourmet com ilha, bancada e churrasqueira revestidas em pedra preta" width="1200" height="900" loading="lazy"><figcaption>Área gourmet em pedra preta</figcaption></figure>
           <figure class="peca p3 peca--video" data-reveal data-delay="160"><video src="assets/video/cozinha-obra.mp4" poster="assets/img/poster-cozinha.webp" muted loop playsinline preload="none" data-autoplay width="540" height="960" aria-label="Vídeo de cozinha com bancadas em pedra clara instaladas"></video><figcaption>Cozinha entregue</figcaption></figure>
-          <figure class="peca p4" data-reveal data-delay="80"><img src="assets/img/bancada-granito-churrasqueira.webp" alt="Bancada em granito ao lado de churrasqueira de tijolos" width="1080" height="1080" loading="lazy"><figcaption>Área de churrasqueira</figcaption></figure>
-          <figure class="peca p5" data-reveal><img src="assets/img/cuba-esculpida-2.webp" alt="Cuba esculpida em pedra com detalhe de encaixe" width="719" height="719" loading="lazy"><figcaption>Lavatório em pedra</figcaption></figure>
-          <figure class="peca p6" data-reveal data-delay="80"><img src="assets/img/bancada-granito-cozinha.webp" alt="Bancada de cozinha em granito escuro instalada" width="1080" height="1080" loading="lazy"><figcaption>Bancada de cozinha em granito</figcaption></figure>
-          <figure class="peca p7" data-reveal data-delay="160"><img src="assets/img/cuba-esculpida-3.webp" alt="Cuba quadrada esculpida em pedra" width="540" height="540" loading="lazy"><figcaption>Cuba esculpida</figcaption></figure>
-          <figure class="peca p8 peca--video" data-reveal data-delay="240"><video src="assets/video/lareira-marmore.mp4" poster="assets/img/poster-lareira.webp" muted loop playsinline preload="none" data-autoplay width="540" height="960" aria-label="Vídeo de lareira revestida em mármore branco"></video><figcaption>Lareira em mármore</figcaption></figure>
+          <figure class="peca p4" data-reveal data-delay="80"><img src="assets/img/lavatorio-cuba-esculpida-bege.webp" alt="Lavatório em pedra bege com cuba esculpida" width="1032" height="774" loading="lazy"><figcaption>Cuba esculpida</figcaption></figure>
+          <figure class="peca p5" data-reveal><img src="assets/img/cozinha-travertino.webp" alt="Bancada de cozinha em travertino com cooktop e frontão na mesma pedra" width="1200" height="900" loading="lazy"><figcaption>Cozinha em travertino</figcaption></figure>
+          <figure class="peca p8 peca--video" data-reveal data-delay="160"><video src="assets/video/lareira-marmore.mp4" poster="assets/img/poster-lareira.webp" muted loop playsinline preload="none" data-autoplay width="540" height="960" aria-label="Vídeo de lareira revestida em mármore branco"></video><figcaption>Lareira em mármore</figcaption></figure>
         </div>
       </div>
     </section>
