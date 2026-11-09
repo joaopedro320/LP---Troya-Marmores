@@ -38,7 +38,7 @@ lp-troya-marmoraria/
 - [ ] **Webhook do formulário**: se for usar Apps Script, colar a URL em `assets/js/tracking.js` (`webhookUrl`). Sem ela, o formulário manda tudo direto pro WhatsApp.
 - [ ] **WhatsApp**: conferido com o briefing, (19) 97420-8114.
 - [ ] **Instagram da QH4** no rodapé: link em `https://www.instagram.com/qh4growth/`. Conferir se é o @ certo.
-- [ ] **Fotos da fábrica**: a seção "A fábrica" fala da CNC, da máquina automática de 45º e do barracão, mas não veio foto das máquinas. Hoje usa a chapa no barracão e a peça na oficina. Pedir ao Alisson fotos/vídeo da CNC e da 45º e trocar `chapa-barracao.webp` / `peca-oficina.webp`.
+- [x] **Fotos da fábrica**: trocadas pelas fotos enviadas pelo cliente (máquina CNC `maquina-cnc.webp` e barracão `barracao-troya.webp`).
 - [ ] **Endereço completo**: não está no briefing. O JSON-LD tem só Conchal/SP. Quando tiver o endereço do barracão, completar `address` (e dá pra incluir o mapa).
 
 ## Fonte do conteúdo
